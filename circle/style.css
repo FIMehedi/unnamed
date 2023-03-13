@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	height: 100svh;
+	width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+	background: #2a3d81;
+}
+
+.circle {
+	overflow: hidden;
+	position: relative;
+	background: #6c93cc;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+}
+
+.circle-border {
+	height: 340px;
+	width: 340px;
+	position: absolute;
+	border-radius: 50%;
+	overflow: hidden;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 40px solid #2a3d81;
+	margin: auto;
+}
+
+.circle-left,
+.circle-right {
+	top: 0;
+	bottom: 0;
+}
+
+.circle-top,
+.circle-bottom {
+	left: 0;
+	right: 0;
+}
+
+.circle-left {
+	left: calc(-50% + 80px);
+}
+
+.circle-right {
+	right: calc(-50% + 80px);
+}
+
+.circle-top {
+	top: calc(-50% + 80px);
+}
+
+.circle-bottom {
+	bottom: calc(-50% + 80px);
+}
